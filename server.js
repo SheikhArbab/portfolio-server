@@ -1,5 +1,4 @@
 import express from 'express'; 
-import serverless from 'serverless-http'; 
 import cors from 'cors';
 import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
@@ -13,7 +12,7 @@ import { errorHandler } from './middlewares/errorHandler.js';
 
 const app = express();
 dotenv.config();
-// connectDB();
+connectDB();
 
 app.use(bodyParser.json({ limit: '1gb' }), cookieParser(), cors({ credentials: true, origin: 'http://localhost:5173' }));
 app.use("/", express.static('public'), authRouter, testiRoutes, projectRouter);

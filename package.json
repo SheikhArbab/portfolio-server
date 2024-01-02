@@ -2,14 +2,11 @@
   "name": "server",
   "version": "1.0.0",
   "description": "portfolio server",
-  "main": "server.js",
+  "main": "./server.js",
   "type": "module",
-  "engines": {
-    "node": "18.x"
-  },
   "scripts": {
-    "start": "nodemon server.js",
-    "dev": "nodemon server.js"
+    "start": "node ./server.js",
+    "dev": "nodemon ./server.js"
   },
   "author": "arbab zafar",
   "license": "MIT",
@@ -23,8 +20,10 @@
     "fs": "^0.0.1-security",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.0.3",
+    "netlify-lambda": "^2.0.16",
     "node-fetch": "^3.3.2",
     "nodemon": "^3.0.2",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "serverless-http": "^3.2.0"
   }
 }

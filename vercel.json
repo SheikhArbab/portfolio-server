@@ -1,15 +1,17 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "./server.js",
-            "use": "@now/node"
-        }
+      {
+        "src": "./server.js",
+        "use": "@now/node",
+        "config": { "target": "esm" }
+      }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "server.js"
-        }
+      {
+        "src": "/(.*)",
+        "dest": "server.js"
+      }
     ]
-}
+  }
+  

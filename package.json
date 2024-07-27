@@ -2,11 +2,11 @@
   "name": "server",
   "version": "1.0.0",
   "description": "portfolio server",
-  "main": "./server.js",
+  "main": "./index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon ./server.js",
-    "dev": "nodemon ./server.js"
+    "start": "nodemon ./index.js",
+    "dev": "nodemon ./index.js"
   },
   "author": "arbab zafar",
   "license": "MIT",
